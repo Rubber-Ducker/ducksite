@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprehensive HTML Example - Dark Theme</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    a {
+      color: #64b5f6;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: #ffa726;
+      text-decoration: underline;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .custom-font {
+      font-family: 'Courier New', monospace;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #444;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <strong>Jump to:</strong>
+    <a href="#table-section">Table</a>
+    <a href="#form-section">Form</a>
+  </nav>
+
+  <h1>Welcome to My Sample HTML Page</h1>
+
+  <h2>Introduction</h2>
+  <p>This page contains various <strong>HTML elements</strong> to demonstrate basic and intermediate markup. It includes <em>text styling</em>, lists, tables, images, and forms.</p>
+
+  <h2>Content Overview</h2>
+  <p>Water is composed of H<sub>2</sub>O. Einstein's famous equation is E = mc<sup>2</sup>, which is often referenced in physics discussions.</p>
+  <p class="custom-font">This paragraph uses a <span class="custom-font">different font</span> to stand out from the rest of the content.</p>
+
+  <ul>
+    <li>HTML Basics</li>
+    <li>CSS Styling</li>
+    <li>Forms and Tables</li>
+  </ul>
+
+  <ol>
+    <li>Open your text editor</li>
+    <li>Write some HTML</li>
+    <li>Save and view in browser</li>
+  </ol>
+
+  <img src="https://via.placeholder.com/200" alt="Placeholder example image">
+
+  <p>
+    Visit 
+    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+    for comprehensive HTML and CSS references.
+  </p>
+
+  <img src="https://via.placeholder.com/150" alt="Accessible Image"
+       aria-describedby="img-desc">
+  <p id="img-desc">This is an example image with an ARIA description for better accessibility.</p>
+
+  <hr>
+
+  <h2 id="table-section">Programming Language Table</h2>
+  <table>
+    <tr>
+      <th>Language</th>
+      <th>Difficulty</th>
+      <th>Use Case</th>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Easy</td>
+      <td>Structure Web Pages</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>Medium</td>
+      <td>Style Web Pages</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>Medium-High</td>
+      <td>Add Interactivity</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2 id="form-section">Contact Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="color">Favorite Color:</label>
+    <select id="color" name="color">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select><br><br>
+
+    <label for="newsletter">Subscribe to newsletter:</label>
+    <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
